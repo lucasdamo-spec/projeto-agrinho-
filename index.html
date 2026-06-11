@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrinho 2026 - Lucas Corso Damo</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #e8f5e9, #ffffff);
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #2e7d32, #66bb6a);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #2e7d32;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1b5e20;
+}
+
+#mensagem {
+    margin-top: 20px;
+    color: #2e7d32;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+.card {
+    width: 280px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+footer {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🌾 Agrinho 2026</h1>
+    <p>Lucas Corso Damo</p>
+</header>
+
+<section class="hero">
+    <h2>Campo e Cidade: Uma Conexão Essencial</h2>
+
+    <p>
+        O campo produz os alimentos que chegam à mesa das famílias,
+        enquanto a cidade oferece tecnologia, serviços e inovação.
+        Juntos, campo e cidade constroem um futuro sustentável,
+        promovendo desenvolvimento econômico, qualidade de vida e
+        preservação ambiental.
+    </p>
+
+    <button onclick="mostrarMensagem()">
+        Clique para descobrir mais
+    </button>
+
+    <div id="mensagem"></div>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <h3>🌱 Agricultura</h3>
+        <p>Produção sustentável e responsável para alimentar o mundo.</p>
+    </div>
+
+    <div class="card">
+        <h3>🏙️ Cidade</h3>
+        <p>Inovação e tecnologia contribuindo para o progresso.</p>
+    </div>
+
+    <div class="card">
+        <h3>🤝 Cooperação</h3>
+        <p>União entre campo e cidade para construir um futuro melhor.</p>
+    </div>
+</section>
+
+<footer>
+    <p>Projeto Agrinho 2026 • Lucas Corso Damo</p>
+</footer>
+
+<script>
+function mostrarMensagem() {
+    document.getElementById("mensagem").innerHTML =
+        "🌾 O futuro depende da união entre o campo e a cidade!";
+}
+</script>
+
+</body>
+</html>
